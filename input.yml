@@ -9,5 +9,5 @@ erih_plus:
   location: data/ERIHPLUSapprovedJournals.csv
 doaj:
   class: File
-  location: journalcsv__doaj.csv
+  location: data/journalcsv__doaj.csv
 
