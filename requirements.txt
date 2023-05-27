@@ -1,7 +1,2 @@
 pandas
 tqdm
-concurrent.futures
-functools
-pprint
-argparse
-csv
