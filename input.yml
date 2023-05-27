@@ -1,3 +1,6 @@
+script:
+  class: File
+  location: run_workflow.py
 oc_meta:
   class: File
   location: 0.csv
@@ -7,3 +10,4 @@ erih_plus:
 doaj:
   class: File
   location: journalcsv__doaj.csv
+
