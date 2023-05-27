@@ -27,4 +27,5 @@ jobs:
 
     - name: Run CWL workflow
       run: |
-        cwltool run_workflow.cwl input.yml
+        cwltool run_workflow.cwl input.yml --conformance-tests --no-read-only --outdir ./ --debug --preserve-entire-environment --tmp-outdir-prefix tmp --tmpdir-prefix tmp --tmpdir-prefix tmp --debug --relax-path-checks --copy-outputs
+
