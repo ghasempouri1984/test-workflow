@@ -34,8 +34,8 @@ if __name__ == '__main__':
     parser.add_argument("--batch_size", default=150, type=int, required=False, help="batch size: e.g. 100")
     parser.add_argument("--max_workers", default=4, type=int, required=False, help="max_workers: e.g. 4")
     parser.add_argument("--oc_meta", default="csv_dump", type=str, required=False, help="path to the OpenCitations Meta dataset")
-    parser.add_argument("--erih_plus", default="ERIHPLUSapprovedJournals.csv", type=str, required=False, help="path to the ERIH PLUS dataset")
-    parser.add_argument("--doaj", default="journalcsv__doaj.csv", type=str, required=False, help="path to the DOAJ file")
+    parser.add_argument("--erih_plus", default="data", type=str, required=False, help="path to the ERIH PLUS dataset")
+    parser.add_argument("--doaj", default="data", type=str, required=False, help="path to the DOAJ file")
 
     args = parser.parse_args()
     args.oc_meta = args.oc_meta.path if isinstance(args.oc_meta, argparse.FileType) else args.oc_meta
