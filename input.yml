@@ -1,0 +1,11 @@
+batch_size: 150
+max_workers: 4
+oc_meta:
+  class: File
+  path: 0.csv
+erih_plus:
+  class: File
+  path: ERIHPLUSapprovedJournals.csv
+doaj:
+  class: File
+  path: journalcsv__doaj.csv
