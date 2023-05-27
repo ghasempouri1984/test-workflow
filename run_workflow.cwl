@@ -6,7 +6,6 @@ baseCommand: ["python"]
 inputs:
   script:
     type: File
-    default: run_workflow.py
   oc_meta:
     type: File
   erih_plus:
