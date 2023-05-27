@@ -9,9 +9,9 @@ inputs:
   oc_meta:
     type: Directory
   erih_plus:
-    type: Directory
+    type: File
   doaj:
-    type: Directory
+    type: File
 
 arguments:
   - valueFrom: $(inputs.script.path)
