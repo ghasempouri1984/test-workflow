@@ -22,7 +22,9 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install cwlref-runner
 
+    - name: Set execute permission for run_workflow.py
+      run: chmod +x run_workflow.py
+
     - name: Run CWL workflow
       run: |
         cwltool run_workflow.cwl input.yml
-
