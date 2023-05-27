@@ -5,9 +5,9 @@ oc_meta:
   class: Directory
   location: csv_dump/
 erih_plus:
-  class: File
-  location: data/ERIHPLUSapprovedJournals.csv
+  class: Directory
+  location: data/
 doaj:
-  class: File
-  location: data/journalcsv__doaj.csv
+  class: Directory
+  location: data/
 
