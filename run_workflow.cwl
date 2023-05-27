@@ -7,7 +7,7 @@ inputs:
   script:
     type: File
   oc_meta:
-    type: File
+    type: Directory
   erih_plus:
     type: File
   doaj:
