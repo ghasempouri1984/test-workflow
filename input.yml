@@ -2,8 +2,8 @@ script:
   class: File
   location: run_workflow.py
 oc_meta:
-  class: File
-  location: 0.csv
+  class: Directory
+  location: csv_dump/
 erih_plus:
   class: File
   location: ERIHPLUSapprovedJournals.csv
