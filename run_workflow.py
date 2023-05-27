@@ -28,7 +28,6 @@ def main(args):
     result_disciplines = CountsProcessor(meta_coverage, "disciplines.csv")
     result_disciplines = result_disciplines.counts(disciplines_dict, "Discipline")
     
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
@@ -39,4 +38,7 @@ if __name__ == '__main__':
     parser.add_argument("--doaj", default="journalcsv__doaj.csv", type=str, required=False, help="path to the DOAJ file")
 
     args = parser.parse_args()
+    args.oc_meta = args.oc_meta.path if isinstance(args.oc_meta, argparse.FileType) else args.oc_meta
+    args.erih_plus = args.erih_plus.path if isinstance(args.erih_plus, argparse.FileType) else args.erih_plus
+    args.doaj = args.doaj.path if isinstance(args.doaj, argparse.FileType) else args.doaj
     main(args)
