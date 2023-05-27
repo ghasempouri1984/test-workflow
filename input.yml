@@ -1,9 +1,9 @@
 oc_meta:
   class: File
-  location: file:///path/to/0.csv
+  location: 0.csv
 erih_plus:
   class: File
-  location: file:///path/to/ERIHPLUSapprovedJournals.csv
+  location: ERIHPLUSapprovedJournals.csv
 doaj:
   class: File
-  location: file:///path/to/journalcsv__doaj.csv
+  location: journalcsv__doaj.csv
