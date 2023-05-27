@@ -24,6 +24,10 @@ jobs:
 
     - name: Set execute permission for run_workflow.py
       run: chmod +x run_workflow.py
+      
+    - name: List directory contents
+      run: ls -l
+
 
     - name: Run CWL workflow
       run: |
