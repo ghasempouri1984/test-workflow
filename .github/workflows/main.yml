@@ -27,5 +27,4 @@ jobs:
 
     - name: Run CWL workflow
       run: |
-        cwltool run_workflow.cwl input.yml
-
+        cwltool $GITHUB_WORKSPACE/run_workflow.cwl $GITHUB_WORKSPACE/input.yml
