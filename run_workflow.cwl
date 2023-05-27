@@ -1,7 +1,8 @@
 cwlVersion: v1.0
 class: CommandLineTool
-id: run_workflow
-baseCommand: python
+
+baseCommand: ["python", "run_workflow.py"]
+
 inputs:
   batch_size:
     type: int
@@ -23,6 +24,10 @@ inputs:
     type: File
     inputBinding:
       prefix: --doaj
+
 outputs:
   result:
     type: stdout
+
+stdout: result.txt
+
