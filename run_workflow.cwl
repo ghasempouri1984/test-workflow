@@ -19,5 +19,10 @@ arguments:
 outputs:
   result:
     type: stdout
+  OCMeta_DOAJ_ErihPlus_merged:
+    type: File
+    outputBinding:
+      glob: "OCMeta_DOAJ_ErihPlus_merged.csv"
 
 stdout: result.txt
+
