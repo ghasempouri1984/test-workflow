@@ -153,7 +153,7 @@ create_test_sets(8, 0)
 subprocess.run(['python', python_file, '--oc_meta', 'fake_OC_Meta', "--erih_plus", "erih_test.csv", "--doaj", "doaj_test.csv"])
 
 ## Check 
-results = pd.read_csv("OCMeta_DOAJ_ErihPlus_merged.csv").sort_values(by='Publications_in_venue', ignore_index=True).drop(["Unnamed: 0"], axis=1)
+results = pd.read_csv("SSH_Publications_in_OC_Meta_and_Open_Access_status.csv").sort_values(by='Publications_in_venue', ignore_index=True).drop(["Unnamed: 0"], axis=1)
 results_test = pd.read_csv("OCMetaCoverage.csv").drop(["Unnamed: 0"], axis=1)
 
 if results.equals(results_test):
